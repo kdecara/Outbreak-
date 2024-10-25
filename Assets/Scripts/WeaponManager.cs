@@ -35,9 +35,10 @@ public class WeaponManager : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(playerCam.transform.position, transform.forward, out hit, range))
         {
-            EnemyManager enemyManager = hit.transform.GetComponent<EnemyManager>();
+            EnemyManager enemyManager = hit.transform.GetComponentInParent<EnemyManager>();
             if(enemyManager != null) //if not null we hit an enemy
             {
+                Debug.Log(hit.transform.name);
                 enemyManager.Hit(damage);
             }
         }

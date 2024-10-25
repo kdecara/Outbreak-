@@ -19,7 +19,9 @@ public class EnemyManager : MonoBehaviour
         if(health <= 0)
         {
             gameManager.enemiesAlive--;
+            Debug.Log("enemy destroyed!");
             Destroy(gameObject);
+
             //Destroy(this) // also works
         }
     }    // Start is called before the first frame update

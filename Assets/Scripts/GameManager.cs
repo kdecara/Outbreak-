@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        endScreen.SetActive(false);
     }
 
     // Update is called once per frame

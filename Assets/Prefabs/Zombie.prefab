@@ -394,6 +394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3622678889956318234}
+  - component: {fileID: 2607047584918566946}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -417,6 +418,27 @@ Transform:
   - {fileID: 7063881111613208039}
   m_Father: {fileID: 2258825469296991678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2607047584918566946
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710675584480706938}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.005
+  m_Center: {x: 0, y: 0.005, z: 0}
 --- !u!1 &1941007853915207824
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,7 +1017,6 @@ GameObject:
   - component: {fileID: 4110988265394640922}
   - component: {fileID: 1214808805412645078}
   - component: {fileID: 4912869994645500140}
-  - component: {fileID: 4927401087688360172}
   - component: {fileID: 9023528356907015712}
   m_Layer: 0
   m_Name: Zombie
@@ -1037,6 +1058,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 4523807806011465510}
   damage: 20
   health: 100
+  gameManager: {fileID: 0}
 --- !u!195 &4912869994645500140
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1059,29 +1081,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &4927401087688360172
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4123457453503266921}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.6
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 3.3, z: 0}
 --- !u!54 &9023528356907015712
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1979,6 +1978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1548826382267643370}
+  - component: {fileID: 558669803304746630}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -2003,6 +2003,27 @@ Transform:
   - {fileID: 8701129890877233886}
   m_Father: {fileID: 4229360484513896462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &558669803304746630
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7794320632176420855}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.005
+  m_Center: {x: 0, y: 0.002, z: 0}
 --- !u!1 &7889035698577704031
 GameObject:
   m_ObjectHideFlags: 0
