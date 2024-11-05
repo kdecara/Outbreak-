@@ -45,10 +45,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void restart()
+    public void Restart()
     {
         Time.timeScale = 1; //needed to unfreeze the game 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("EARTH");
+    }
+
+    public void ExitToMainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MAINMENU");
     }
 
     public void EndGame()
