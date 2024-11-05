@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Text roundNumber;
     public Text roundsSurvived;
     public GameObject endScreen;
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +43,12 @@ public class GameManager : MonoBehaviour
 
             enemiesAlive++;
         }
+    }
+
+    public void restart()
+    {
+        Time.timeScale = 1; //needed to unfreeze the game 
+        SceneManager.LoadScene(0);
     }
 
     public void EndGame()
