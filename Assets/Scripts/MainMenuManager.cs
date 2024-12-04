@@ -7,7 +7,7 @@ public class MainMenuManager : MonoBehaviour
 {
     public void StartEarth()
     {
-        SceneManager.LoadScene("Earth"); //GAME is earth
+        SceneManager.LoadScene("Earth"); 
     }
 
     public void StartMars()

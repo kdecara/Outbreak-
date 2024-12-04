@@ -3550,6 +3550,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4371222682828954949, guid: d6834fe065295814d8d657cc943fffec,
         type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1518905131}
+    - target: {fileID: 4371222682828954949, guid: d6834fe065295814d8d657cc943fffec,
+        type: 3}
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 76605495}
@@ -3596,6 +3601,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1136282896}
   m_SourcePrefab: {fileID: 100100000, guid: d6834fe065295814d8d657cc943fffec, type: 3}
+--- !u!20 &1518905131 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6287616181773336981, guid: d6834fe065295814d8d657cc943fffec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1518905130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1533792972
 GameObject:
   m_ObjectHideFlags: 0
